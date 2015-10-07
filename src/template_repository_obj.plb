@@ -20,7 +20,7 @@ TYPE BODY template_repository_obj AS
   as
     l_dir_info  directory_t;
   BEGIN
-    l_dir_info := template_repo_const.EXTRACT_DIR_INFO( p_repodir );
+    l_dir_info := directory_t( p_repodir );
 
     if l_dir_info.repository is null then raise template_repo_const.invalid_repository; end if;
     if l_dir_info.full_directory is null then l_dir_info.full_directory := '/'; end if;
