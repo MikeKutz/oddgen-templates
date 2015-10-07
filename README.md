@@ -48,3 +48,7 @@ To be able to use one, you must first "mount" the repository.
 
 To "(un)mount" on, either use the REPOSITORIES_ADMIN package or the APEX Application.
 Currently, the first repository (by PK) is the primary repository.
+
+The architecture of the repository service looks like this:
+
+<img src="https://raw.github.com/MikeKutz/oddgen-templates/master/template_repository_arch.png" align="center" />
